@@ -1,0 +1,74 @@
+const menu = {
+    list() {
+        return [
+    {
+        "backMenu":[
+        ],
+        "frontMenu":[
+        ],
+        "hasBackLogin":"是",
+        "hasBackRegister":"否",
+        "hasFrontLogin":"否",
+        "hasFrontRegister":"否",
+        "roleName":"管理员",
+        "tableName":"users"
+    },
+    {
+        "backMenu":[
+			{
+                "child":[
+                    {
+                        "buttons":[
+                            "查看",
+                        ],
+                        "menu":"课程信息",
+                        "menuJump":"列表",
+                        "tableName":"kecheng"
+                    }
+                ],
+                "menu":"课程信息"
+            }
+			,
+			{
+                "child":[
+                    {
+                        "buttons":[
+                            "查看",
+                        ],
+                        "menu":"公告",
+                        "menuJump":"列表",
+                        "tableName":"news"
+                    }
+                ],
+                "menu":"公告"
+            }
+			,
+			{
+                "child":[
+                    {
+                        "buttons":[
+                            "查看",
+                            "删除"
+                        ],
+                        "menu":"我的选课信息",
+                        "menuJump":"列表",
+                        "tableName":"xuanke"
+                    }
+                ],
+                "menu":"选课信息"
+            }
+        ],
+        "frontMenu":[
+        ],
+        "hasBackLogin":"是",
+        "hasBackRegister":"否",
+        "hasFrontLogin":"是",
+        "hasFrontRegister":"是",
+        "roleName":"学生",
+        "tableName":"xuesheng"
+    }
+]
+
+	}
+}
+export default menu;
